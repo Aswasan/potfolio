@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script>
+        function home(){
+            window.location.href ="index.html";
+        }
+        function about(){
+            window.location.href ="myblog.html";
+        }
+        function gallary(){
+            window.location.href ="photo.html";
+        }
+function contact(){
+    window.location.href="contact.html";
+}
+function call(){
+    alert(' SUBMIT VAYO');
+}
+    </script>
+    <body>
+    <header class="head">
+        <a href="#home" class="hm"  id="hme" onclick="home()">Home</a>
+        <a href="#about" class="hm" id="abt" onclick="about()">About</a>
+        <a href="#gallary" class="hm" id="gly" onclick="gallary()">Gallary</a>
+        <a href="#contact" class="hm" id="ctc" onclick="contact()">Contact</a>
+        </header>
+        <h1 class="contact">Contact Us:</h1>
+        <form action="process_form.php" method="POST">
+            <label for="name" class="detail">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email" class="detail">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message" class="detail">Message:</label>
+            <textarea id="message" name="message" rows="3" required></textarea>
+            <br><br>
+            <button type="submit" onclick="call()" id="sub">Submit</button>
+        </form>
+        </body>

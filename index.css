@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+    background-image: url(lightbg.png.png);
+    background-attachment: fixed;
+ background-blend-mode:screen;
+ background-size: cover;
+ box-sizing: border-box;
+ 
+}
+.hm{
+   position: relative;
+    top: 10px;
+    left: 70%;
+    text-decoration: none;
+  right: 10%;
+border: 2px solid black;
+border-radius:100px;
+  padding: 3px;
+    font-weight: bold;
+    color: azure;
+}
+
+.myself{ 
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 150%;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 32%; 
+
+}
+.myself .std{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    color: #fff; 
+    transform: translateX(-50px);
+    animation: slide-in-typing 0.5s forwards;
+  }
+
+  @keyframes slide-in-typing {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+#am{
+    position: absolute;
+    top:39%;
+    left: 43%;
+}
+.about-content{
+    margin: 20%;
+    border: 2px solid cornsilk;
+    text-align: center;
+    color: bisque;
+    font-size: 100%;
+    font-weight: bold;
+}
+a:before{
+    content: '';
+    position: absolute;
+    background: aliceblue;
+    width: 0;
+    height: 3px;
+
+    bottom: 0;
+    transition: 0.5s ease;
+}
+a:hover:before{
+width: 80%;
+}
+.photo{
+ 
+  position: relative;  
+    height:50%;
+    width:35%;
+    right: 4%;
+    top:0;
+bottom: 20%;
+border: 2px solid wheat;
+
+}
+.head{
+    position: relative;
+    left: 10%;
+    word-spacing: 100%;
+}
+  
+  .photo-grid {
+   
+    display: grid;
+    grid-template-columns: repeat(4,0.3fr); 
+    gap: 1px; 
+  }
+.photo-item {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: auto;
+    object-fit:contain;
+    transition: transform 0.3s ease; 
+}
+
+.photo-item:hover {
+    transform: scale(1.2); 
+}
+
+#p3{
+top: 10%;
+}
+.facebook-container {
+ 
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+  flex-direction: column;
+}
+.facebook-container a{
+    margin-bottom: 10px;
+}
+.facebook-icon{
+    color: #166cd6;
+    font-size: 30px;
+
+}
+.instagram-icon {
+    color: #c13584; 
+    font-size: 30px;
+}
+.facebook-container {
+    margin-right: 10px; 
+}
+.contact{
+    border: 2px solid rgb(255, 255, 255);
+    width: 16%;
+    position: relative;
+    left: 25%;
+    color: aliceblue;
+}
+.detail{
+    color: azure;
+}
+#sub{
+    position: absolute;
+    left: 5%;
+}
